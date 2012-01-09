@@ -6,7 +6,7 @@
  *
  * * Creation Date : 12-12-2011
  *
- * * Last Modified : Mon 09 Jan 2012 09:21:03 AM EET
+ * * Last Modified : Mon 09 Jan 2012 09:24:48 AM EET
  *
  * * Created By : Greg Liras <gregliras@gmail.com>
  *
@@ -46,7 +46,7 @@ int main()
     myfile << m << ":";
     if(s<10)
         myfile << '0';
-    myfile << s;
+    myfile << s << endl;
     myfile.close();
     myinputfile.close();
 
