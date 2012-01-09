@@ -6,7 +6,7 @@
 
 * Creation Date : 10-01-2012
 
-* Last Modified : Tue 10 Jan 2012 12:42:16 AM EET
+* Last Modified : Tue 10 Jan 2012 01:35:32 AM EET
 
 * Created By : Greg Liras <gregliras@gmail.com>
 
@@ -40,6 +40,7 @@ int main()
     else
         myoutfile << ceil(ans) << endl;
 
-
+    myoutfile.close();
+    myinputfile.close();
     return 0;
 }
