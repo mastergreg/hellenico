@@ -6,7 +6,7 @@
 
 * Creation Date : 10-01-2012
 
-* Last Modified : Tue 10 Jan 2012 01:35:32 AM EET
+* Last Modified : Tue 10 Jan 2012 02:07:27 AM EET
 
 * Created By : Greg Liras <gregliras@gmail.com>
 
@@ -24,7 +24,7 @@ int main()
     ifstream myinputfile("downloads.in");
     ofstream myoutfile("downloads.out");
     int n,bitrate,sec,bandwidth,totalsize;
-    float ans;
+    double ans;
     bandwidth=0;
     totalsize=0;
     myinputfile >> n;
@@ -34,7 +34,7 @@ int main()
         bandwidth+=bitrate;
         totalsize+=bitrate*sec;
     }
-    ans = float(totalsize)/float(bandwidth);
+    ans = static_cast<double>(totalsize)/ bandwidth;
     if(ceil(ans)-ans>ans-floor(ans))
         myoutfile << floor(ans) << endl;
     else
