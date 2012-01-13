@@ -6,7 +6,7 @@
 
 * Creation Date : 12-01-2012
 
-* Last Modified : Thu 12 Jan 2012 04:16:21 PM EET
+* Last Modified : Thu 12 Jan 2012 04:54:15 PM EET
 
 * Created By : Greg Liras <gregliras@gmail.com>
 
@@ -51,7 +51,6 @@ int main()
     }
     big_m=*max_element(input.begin(),input.begin()+times);
 
-    cout << times << " " << big_m << endl;
     myoutfile << times << " " << big_m << endl;
 
 
